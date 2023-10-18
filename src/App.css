@@ -1,0 +1,501 @@
+.App {
+  text-align: center;
+ 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #6fd7f46d;
+  min-height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+.container{
+  margin-top: 50px;
+ height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.left,.right{
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+/* .container button{
+  padding: 10px 40px ;
+  height: 50px;
+  font-size: 25px;
+  background-color: rgb(206, 5, 136);
+  color: white;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.829);
+  cursor: pointer;
+
+} */
+
+
+/* button{
+  padding: 10px 40px ;
+  height: 50px;
+  font-size: 25px;
+  background-color: rgb(206, 5, 136);
+  color: white;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.829);
+  cursor: pointer;
+
+} */
+.card{
+  margin-top: 100px;
+  width: 80%;
+  padding: 10px 40px ;
+  height: 260px;
+  background-color: rgb(200, 39, 249);
+  box-shadow: 5px 5px 5px black;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formClass{
+  width: 30%;
+  height: auto;
+  box-shadow: 0px 0px 5px black;
+  padding: 50px 50px 40px 50px;
+  border-radius: 10px;
+
+
+}
+.form-valid{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.labels,.inputs{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 20px;
+}
+
+.inputs input{
+ padding: 5px 10px;
+ text-align: center;
+ border-radius: 5px;
+ border: 1px solid rgb(10, 5, 104);
+}
+
+.submit{
+  width: 100%;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 3, 70);
+  border-radius: 5px;
+  margin-top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.box{
+
+  min-height: 30px;
+  /* box-shadow: 0px 0px 5px black; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.box:nth-child(1){
+
+width: 10%;
+}
+
+.box:nth-child(2){
+
+  width: 25%;
+  }
+  .box:nth-child(3){
+
+    width: 10%;
+    }
+
+    .box:nth-child(4){
+
+      width: 25%;
+      }
+      .box:nth-child(5){
+
+        width: 20%;
+        }
+        .box:nth-child(6){
+
+          width: 10%;
+          }
+
+.head{
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 0px 2px black;
+
+
+
+  /* border-radius: 5px; */
+}
+.reviewformClass{
+  width: 100%;
+  box-shadow: 0px 0px 5px black;
+  height: fit-content;
+  border-radius: 2px;
+}
+
+.data{
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.data::-webkit-scrollbar{
+  width: 10px;
+  cursor: pointer;
+  background-color: rgb(204, 214, 254);
+  border-radius: 2px;
+
+
+  
+}
+
+.feedback{
+  width: 80%;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+
+}
+.goback{
+  position: absolute;
+  bottom: 10%;
+  width: 30%;
+
+}
+.box i{
+cursor: pointer;
+  
+  }
+.box i:nth-child(2){
+color: red;
+}
+.box:nth-child(6){
+  justify-content:flex-start;
+  gap: 20px;
+}
+
+.data::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: rgb(45, 5, 113);
+cursor: pointer;
+}
+.toast{
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:orange;
+  display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+color: white;
+
+}
+.inp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.box1{
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.cont-head{
+  height: 500px;
+  width: 100%;
+  background-color: rgb(125, 73, 188);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(125, 73, 188);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width:1200px) {
+  .formClass {
+    width: 50%;
+   
+}
+}
+@media (max-width:900px) {
+  .feedback {
+
+    width: 100%;
+
+ }
+  .container{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+  }
+  .left,.right{
+    width: 100%;
+    margin-top: 20px;
+   
+  }
+  .card{
+    margin-top: 10px;
+  
+ 
+  }
+ 
+  .reviewformClass{
+    width: 100%;
+ 
+  }
+  .formClass{
+    width: 100%;
+
+  
+  
+  }
+  .inputs{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .inputs input {
+width: 100%;
+  }
+  .feedback {
+
+    width: 100%;
+
+ }
+
+}
+
+
+
+
+
+
+@media (max-width:700px) {
+  .feedback {
+
+    width: 100%;
+
+ }
+  .container{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+  }
+  .left,.right{
+    width: 100%;
+    margin-top: 20px;
+   
+  }
+  .card{
+    margin-top: 10px;
+  
+ 
+  }
+ 
+  .reviewformClass{
+    width: 100%;
+ 
+  }
+  .formClass{
+    width: 100%;
+
+  
+  
+  }
+  .inputs{
+    display: flex;
+    align-items: flex-end;
+  }
+  .feedback {
+
+    width: 100%;
+
+ }
+
+.goback{
+ width: 50%;
+
+}
+}
+
+@media (max-width:600px) {
+  .container{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+  }
+  .left,.right{
+    width: 100%;
+    margin-top: 20px;
+   
+  }
+  .card{
+    margin-top: 10px;
+ 
+  }
+ 
+  .reviewformClass{
+    width: 100%;
+ 
+  }
+  .formClass{
+    width: 100%;
+
+  
+  
+  }
+  .inputs{
+    display: flex;
+    align-items: flex-end;
+  }
+  .feedback {
+
+    width: 100%;
+
+ }
+ .box:nth-child(6) {
+  justify-content: flex-start;
+  gap: 10px;
+}
+}
+
+
+
+
+@media (max-width:550px) {
+ 
+  .left,.right{
+    width: 100%;
+    margin-top: 20px;
+   
+  }
+  .card{
+    margin-top: 10px;
+ 
+  }
+  .labels{
+    width: 40%;
+  }
+  .inputs{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .feedback {
+
+     width: 100%;
+
+  }
+
+
+}
+
+
+@media (max-width:450px) {
+ 
+ 
+ 
+  .labels{
+    width: 30%;
+    font-size: 15px;
+
+  }
+  .inputs{
+    width: 70%;
+   
+    font-size: 15px;
+
+  }
+
+  .inputs input{
+   padding: 2px 5px;
+
+  }
+
+  .submit {
+padding: 5px 0px;
+font-size: 15px;
+  }
+  .formClass{
+    padding: 30px;
+  }
+
+  .box{
+    font-size: 14px;
+  }
+  .head{
+    padding: 0px 5px;
+  }
+ 
+  .box:nth-child(1) {
+    width: 10%;
+
+  }
+  .box:nth-child(6) {
+    gap: 10px;
+    width: 15%;
+
+  }
+
+
+}
+
+
+
